@@ -1,0 +1,11 @@
+.center-full {
+    text-align: center;
+    height: 30px;
+    width: 240px;
+    margin-top: -15px;
+    top: 50%;
+    position: absolute;
+    display: block;
+    left: 50%;
+    margin-left: -120px;
+}

@@ -1,0 +1,31 @@
+<div class="input-group" style="width: 50%; margin: 25px 25% 25px 25%;">
+  <input type="search" class="form-control rounded" placeholder="Search" aria-label="Search" aria-describedby="search-addon" id="toSearch" />
+  <button type="button" class="btn btn-outline-primary" onclick="main()" id="search">search</button>
+</div>
+
+<h2 style="text-align: center">Lista de noticias</h2>
+
+
+
+<ul class="list-unstyled">
+    {{#each data}}
+    <div class="media p-3 m-2">
+            <div class="media-left w-30">
+                <img
+                    src="{{this.urlToImage}}"
+                    alt="img"
+                    class="m-3"
+                    style="width:20%"
+                />
+            </div>
+            <div class="media-body w-60 align-self-center m-2">
+                <h5><a href="{{this.url}}">{{this.title}}</a></h5>
+                <p class="text-muted">{{this.author}}</p>
+                <p>{{this.description}}</p>
+                
+            </div>
+</div>
+    {{/each}}
+</ul>
+
+

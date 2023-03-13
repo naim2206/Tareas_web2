@@ -1,0 +1,14 @@
+NEWS APP
+
+permite buscar noticias y filtrar por palabras clave
+
+tecnologías usadas: express, bootstrap, handlebars, newsapi
+
+dependencias:
+-express ^4.18.2
+-express-handlebars ^7.0.1
+-newsapi ^2.4.1
+
+después de instalar las dependencias se ejecuta el proyecto con el comando:
+
+npm start

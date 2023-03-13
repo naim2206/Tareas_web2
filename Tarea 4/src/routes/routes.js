@@ -1,17 +1,12 @@
 const express = require("express");
 const router = express.Router();
+const getNoticia = require("../controller/noticia");
 
 router.get("/", (req, res) => {
-    res.render("menu");
+    res.render("home");
 });
 
-router.get("/bio", (req, res) => {
-    res.render("bio");
-});
-
-router.get("/photos", (req, res) => {
-    res.render("photos");
-});
+router.get("/:q", express.json(), getNoticia);
 
 router.get("*", (req, res) => {
     res.render("not_found");

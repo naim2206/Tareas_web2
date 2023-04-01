@@ -1,0 +1,8 @@
+/* You can add global styles to this file, and also import other style files */
+@import "colores";
+body {
+    background-color: $color-primario;
+    color: $color-letras;
+    height: 100%;
+    font-family: Helvetica, Arial, Sans-Serif;
+}

@@ -1,0 +1,66 @@
+@mixin nomargin {
+    margin: 0;
+    padding: 0;
+}
+
+@mixin tablet {
+    @media screen and (max-width: 900px) {
+        @content;
+    }
+}
+
+@mixin mobile {
+    @media screen and (max-width: 500px) {
+        @content;
+    }
+}
+
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+}
+
+.center {
+    text-align: center;
+
+    &-full {
+        @extend .center;
+        height: 30px;
+        width: 240px;
+        margin-top: -15px;
+        top: 50%;
+        position: absolute;
+        display: block;
+        left: 50%;
+        margin-left: -120px;
+    }
+}
+
+
+.column {
+    float: left;
+    width: 25%;
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+@include tablet {
+    .column {
+        width: 50%;
+    }
+}
+
+@include mobile {
+    .column {
+        width: 100%;
+    }
+}

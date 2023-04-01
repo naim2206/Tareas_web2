@@ -1,0 +1,42 @@
+.contacto {
+    margin-top: 50px;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    padding: 30px 0;
+  }
+  
+  .contacto h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .contacto ul {
+    list-style: none;
+    margin: 0 auto;
+    max-width: 600px;
+    padding: 0;
+  }
+  
+  .contacto li {
+    margin-bottom: 20px;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .contacto i {
+    margin-right: 10px;
+    font-size: 24px;
+    color: #333;
+  }
+  
+  .contacto a {
+    color: #333;
+    text-decoration: none;
+  }
+  
+  .contacto a:hover {
+    text-decoration: underline;
+  }
+  

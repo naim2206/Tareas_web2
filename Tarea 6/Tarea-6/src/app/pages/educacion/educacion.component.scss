@@ -1,0 +1,34 @@
+.education-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 40px;
+  }
+  
+  .education-table th,
+  .education-table td {
+    padding: 12px;
+    text-align: left;
+  }
+  
+  .education-table th {
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 14px;
+    color: #999;
+  }
+  
+  .education-table td {
+    font-size: 16px;
+    color: black;
+    border-bottom: 1px solid black;
+  }
+  
+  .education-table tbody tr:last-child td {
+    border-bottom: none;
+  }
+  
+  .education-table tbody tr {
+    background-color: #444;
+  }
+  
+  
